@@ -15,6 +15,20 @@
   --bodyFontSize: 1rem;
   /* 60px - 100px top and bottom */
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  
+}
+
+.croissant-one-regular {
+  font-family: "Croissant One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.urbanist-text {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -28,11 +42,12 @@ body {
   box-sizing: border-box;
 }
 .cs-topper {
+  font-family: "Staatliches", sans-serif;
   font-size: var(--topperFontSize);
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: inherit;
-  letter-spacing: .1em;
+  letter-spacing: .5em;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 0.25rem;
@@ -767,7 +782,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0.25rem;
-    color: var(--primary);
+    color: #f9963b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -802,6 +817,7 @@ body {
     color: #fff;
   }
   #hero-1619 .cs-button-solid {
+    font-family: "Urbanist", "sans-serif";
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -810,7 +826,7 @@ body {
     margin: 0;
     color: #fff;
     padding: 0 1.5rem;
-    background-color: #a17058;
+    background-color: #f9963b;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -867,6 +883,7 @@ body {
   }
   #hero-1619 .cs-h3 {
     /* 20px - 25px */
+    font-family: "Croissant One", serif;
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
     font-weight: bold;
@@ -993,6 +1010,7 @@ body {
       gap: 1.5rem;
   }
   #gallery-1446 .cs-title {
+      font-family: "Croissant One", serif;
       margin: 0;
   }
   #gallery-1446 .cs-gallery {
@@ -1056,6 +1074,9 @@ body {
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
+  }
+  #steps-1675 .cs-title {
+    font-family: "Croissant One", serif;
   }
   #steps-1675 .cs-text {
     /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
@@ -1187,6 +1208,7 @@ body {
     align-items: center;
   }
   #collection-1577 .cs-title {
+    font-family: "Croissant One", serif;
     margin: 0;
   }
   #collection-1577 .cs-topper {

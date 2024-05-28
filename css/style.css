@@ -18,19 +18,6 @@
   
 }
 
-.croissant-one-regular {
-  font-family: "Croissant One", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.urbanist-text {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 body {
   background-color: #fdf1d8;
   margin: 0;
@@ -47,7 +34,7 @@ body {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: inherit;
-  letter-spacing: .5em;
+  letter-spacing: 0.5em;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 0.25rem;
@@ -150,7 +137,7 @@ body {
   }
   #cs-navigation .cs-logo {
     width: auto;
-    max-width: 12.5rem;
+    max-width: 13.5rem;
     height: 100%;
     margin: 0 auto 0 0;
     /* prevents padding from affecting height and width */
@@ -427,6 +414,7 @@ body {
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #cs-navigation .cs-dropdown {
+    font-family: "Urbanist", sans-serif;
     position: relative;
   }
   #cs-navigation .cs-dropdown:hover {
@@ -466,6 +454,7 @@ body {
     transform-origin: top;
   }
   #cs-navigation .cs-drop-li {
+    font-family: "Urbanist", sans-serif;
     font-size: 1rem;
     text-decoration: none;
     list-style: none;
@@ -558,6 +547,7 @@ body {
     transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
   }
   #cs-navigation .cs-container {
+    font-family: "Urbanist", sans-serif;
     width: 100%;
     max-width: 90rem;
     margin: auto;
@@ -776,6 +766,7 @@ body {
   #hero-1619 .cs-topper {
     /* 13px - 16px */
     font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    max-width: 32.625rem;
     line-height: 1.2em;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -883,7 +874,7 @@ body {
   }
   #hero-1619 .cs-h3 {
     /* 20px - 25px */
-    font-family: "Croissant One", serif;
+    font-family: "Playfair Display", serif;
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
     font-weight: bold;
@@ -893,6 +884,7 @@ body {
   }
   #hero-1619 .cs-item-text {
     /* 14px - 16px */
+    font-family: "Urbanist", sans-serif;
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     max-width: 28.125rem;
@@ -955,7 +947,7 @@ body {
     height: 87%;
   }
   #hero-1619 .cs-background:before {
-    background: linear-gradient(90deg, #993036 10.41%, #993035ad 34.98%, #99303509 62.53%);
+    background: linear-gradient(90deg, #723539 10.41%, #723539bd 34.98%, #72353927 62.53%);
     opacity: 1;
   }
 }
@@ -1080,7 +1072,49 @@ body {
   }
   #steps-1675 .cs-text {
     /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    font-family: "Urbanist", sans-serif;
     max-width: 32.625rem;
+  }
+  #steps-1675 .cs-button {
+    margin: 10px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+  }
+  #steps-1675 button{
+    position: relative;
+    padding: 25px 45px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+    background: #993036ff;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #steps-1675 button:active{
+    transform: scale(0.95);
+  }
+  #steps-1675 button span{
+    position: absolute;
+    background: rgb(100, 31, 35);
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: ripple 2s linear infinite;
+    transition: 0.5s;
+  }
+  @keyframes ripple{
+    0%{
+      width: 0;
+      height: 0;
+      opacity: 0.5;
+    }
+    100%{
+      width: 500px;
+      height: 500px;
+      opacity: 0;
+    }
   }
   #steps-1675 .cs-card-group {
     margin: 0;
@@ -1128,7 +1162,7 @@ body {
     font-weight: 900;
     line-height: 1.2em;
     color: var(--primary);
-    opacity: 0.12;
+    opacity: 0.3;
     display: block;
   }
   #steps-1675 .cs-h3 {
@@ -1141,6 +1175,7 @@ body {
   }
   #steps-1675 .cs-item-text {
     /* 14px - 16px */
+    font-family: "Urbanist", sans-serif;
     font-size: clamp(0.875rem, 2vw, 1rem);
     line-height: 1.5em;
     text-align: left;
@@ -1212,7 +1247,7 @@ body {
     margin: 0;
   }
   #collection-1577 .cs-topper {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #collection-1577 .cs-card-group {
     list-style: none;
@@ -1265,6 +1300,7 @@ body {
     transition: transform .6s, opacity .3s;
   }
   #collection-1577 .cs-category {
+    font-family: "Staatliches", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -1362,11 +1398,12 @@ body {
   }
   #footer-1147 .cs-link {
       /* 14px - 16px */
+      font-family: "Urbanist", sans-serif;
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
       text-decoration: none;
       margin: 0;
-      color: #bababa;
+      color: #000000;
       display: block;
       transition: color 0.3s;
   }
@@ -1374,7 +1411,7 @@ body {
       color: var(--secondary);
   }
   #footer-1147 .cs-logo {
-      width: 10.5rem;
+      width: 15rem;
       height: auto;
       display: block;
   }
@@ -1404,7 +1441,7 @@ body {
   #footer-1147 .cs-social-link {
       width: 2rem;
       height: 2rem;
-      background-color: #484848;
+      background-color: #d1977c;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -1425,10 +1462,11 @@ body {
       opacity: 0.5;
   }
   #footer-1147 .cs-copyright {
+      font-family: "Urbanist", sans-serif;
       font-size: 1rem;
       line-height: 1.5em;
       margin: 0;
-      color: #bababa;
+      color: #000;
       display: block;
   }
   #footer-1147 .cs-copyright-link {
@@ -1456,7 +1494,7 @@ body {
       display: block;
       height: 100%;
       width: 100%;
-      background: #380f0f;
+      background: #dda084;
       opacity: 0.96;
       top: 0;
       left: 0;
